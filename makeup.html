@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Page</title>
+    <style>
+         .nav{
+            width: 100%;
+            height: auto;
+            /* border: 1px solid black; */
+            display: flex;
+            background-color: black;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .nav>div:nth-child(1)>img{
+            margin-left: 20px;
+        }
+        .nav>div:nth-child(2)>a{
+            /* margin-left: 20px; */
+            color: white;
+            font-size: 30px;
+            margin-top: 50px;
+            display: block;
+            text-decoration: none;
+        }
+        .nav>div:nth-child(3)>input{
+             width: 500px;
+             height: 30px;
+             margin-top: 50px;
+             margin-left: 50px;
+             border-radius: 8px 0px 0px 8px;
+             background-color: rgb(51, 50, 50);
+             border: 1px solid white;
+             color: white;
+        }
+        .nav>div:nth-child(4)>button{
+            width: 70px;
+            height: 38px;
+            margin-top: 48px;
+            background-color: white;
+            border-radius: 0px 8px 8px 0px;
+            border: 1px solid black;
+        }
+        .nav>div:nth-child(5)>img{
+            margin-left: 80px;
+            margin-top: 50px;
+        }
+         .nav>div:nth-child(6)>a{ 
+            color:  white;
+            margin-top: 60px;
+           display: block;
+           text-decoration: none;
+        }
+    
+        .nav>div:nth-child(7)>img{
+           margin-left: 120px;
+            margin-top: 50px;
+        }
+        .nav>div:nth-child(8)>img{
+           
+            margin-top: 50px;
+        }
+        .nav>div:nth-child(9)>img{
+            
+            margin-top: 50px;
+        }
+        .nav2{
+            /* border: 1px solid wheat; */
+            width: 100;
+            height: 60px;
+            display: flex;
+            background-color: rgb(22, 22, 22);
+            
+        }
+        .nav2>a{
+            margin: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .wlcm{
+            width: 100%;
+            height: 250px;
+            /* border: 1px solid black; */
+            background-color: rgb(39, 35, 35);
+        }
+        .wlcm>img{
+            margin-left: 200px;
+        }
+        .nav3{
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid black; */
+            display: flex;
+            background-color: beige;
+            border-radius: 0px 0px 10px 10px;
+           
+        }
+        .nav3>p{
+            margin: 15px;
+        }
+        .nav3>a{
+            margin: 15px;
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        .product{
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            ;background-color: azure;
+           
+        }
+        .product>div{
+            /* display: grid;
+            grid-template-columns: repeat(4,1fr); */
+            width: 75%;
+            height: auto;
+            /* border: 1px solid green; */
+            margin: 40px;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+           
+        }
+        .product>div:hover
+        {
+            transform:scale(1.1);
+            cursor: pointer;
+        }
+
+        .product>div>img{
+            margin-top: 10px;
+        }
+        .product>div>button{
+            width: 80%;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .stay{
+            margin-top: 80px;
+            width: 100%;
+            height: 250px;
+            /* border: 1px solid green; */
+            background-color: antiquewhite;
+        }
+        .stay>h3{
+            text-align: center;
+            color: black;
+            font-size: 30px;
+            padding-top: 60px;
+        }
+        .stay div{
+            text-align: center;
+        }
+        .stay>div>input{
+            width: 500px;
+            height: 30px;
+            border-radius: 8px 0px 0px 8px;
+        }
+        .stay>div>button{
+            height: 38px;
+            border-radius: 0px 8px 8px 0px;
+        }
+        .bottom{
+            width: 100%;
+            height: auto;
+            /* border: 1px solid green; */
+            background-color: black;
+            border-radius: 10px;
+        }
+        .bottom>div:nth-child(1){
+            width: 50%;
+            margin-left:45%;
+         }
+         
+         .bottom>div:nth-child(3){
+            /* border: 1px solid red; */
+            border-bottom: 1px solid white;
+            height: 50px;
+            width: 80%;
+            margin: auto;
+            padding-bottom: 20px;
+         }
+         .bottom>div:nth-child(3)>img:nth-child(1){
+            border-radius: 50%;
+            margin-left: 400px;
+            margin-top: 7px;
+         }
+         .bottom>div:nth-child(3)>img:nth-child(2){
+            border-radius: 50%;
+            margin-left: 30px;
+            margin-top: 7px;
+         }
+         .bottom>div:nth-child(3)>img:nth-child(3){
+            border-radius: 50%;
+            margin-left: 30px;
+            margin-top: 7px;
+         }
+         .bottom>div:nth-child(3)>img:nth-child(4){
+            border-radius: 50%;
+            margin-left: 30px;
+            margin-top: 7px;
+         }
+         .bottom>div:nth-child(3)>img:nth-child(5){
+            border-radius: 50%;
+            /* margin-left: 300px; */
+            margin-bottom: 2px;
+         }
+         .bottom>div:nth-child(4){
+          width: 50%;
+          margin: auto;
+          display: flex;
+          justify-content: space-evenly;
+          padding: 10px;
+          font-size: 20px;
+          border-bottom: 1px solid white;
+         }
+         .bottom>div:nth-child(4)>span{
+            color: white;
+         }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        
+        <div><img   width="130px" src="C:\Users\aman1\Downloads\logo black.jpg" alt="logo"></div>
+        <div><a href="C:\Users\aman1\OneDrive\Desktop\dear-ink-638\index.html">Ｃ Ａ Ｔ</a></div>
+        <div><input type="text"  placeholder="search" name="" id=""></div>
+        <div><button>Search</button></div>
+        <div><img  width= "40px"
+        src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX25634104.jpg" alt=""></div>
+        <div><a href="">Login/Register</a></div>
+        <div><img width="30px" src="C:\Users\aman1\OneDrive\Pictures\heart black.png" alt=""></div>
+        <div><img width="40px" src="C:\Users\aman1\OneDrive\Pictures\cart black.jpg" alt=""></div>
+        <div><img width="30px" src="C:\Users\aman1\Downloads\background.jpg" alt=""></div>
+    </div>
+    <div class="nav2">
+        <a href="C:\Users\aman1\OneDrive\Desktop\dear-ink-638\makeup.html">Makeup</a>
+        <a href="">Brushes</a>
+        <a href="">Skincare</a>
+        <a href="">Gifting</a>
+        <a href="">Blog</a>
+        <a href="">Offers</a>
+    </div>
+    <div class="wlcm">
+       <img  height="100%" width="70%" src="https://d32baadbbpueqt.cloudfront.net/Collection/6a68d77f-80b5-4860-9a4d-6005844c937d.jpg" alt="">
+    </div>
+    <div class="nav3">
+       <a href="C:\Users\aman1\OneDrive\Desktop\dear-ink-638\index.html" style="color: grey;">Home</a>
+       <p style="color: grey;">></p>
+       <a href="C:\Users\aman1\OneDrive\Desktop\dear-ink-638\makeup.html"><b>Makeup</b></a>
+    </div>
+    <div class="product">
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607" alt="">
+        <p>Contour De Force Face Palette</p>
+        <p><B>₹799</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/SUGAR-Prime-Sublime-Primer---Powered-By-Images1_ebe7ea59-dff5-4a2a-9a70-c94435d3f46e.jpg?v=1666928973" alt="">
+        <p>SUGAR Prime Sublime Primer - Brightening </p>
+        <p><B>₹499</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/17-Raf-Mini-1_722c9db9-41f9-4a9f-8084-f121e232d86f.jpg?v=1658851265" alt="">
+        <p>Ace Of Face Foundation Stick</p>
+        <p><B>₹799</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232" alt="">
+        <p>Matte As Hell Crayon Lipstick</p>
+        <p><B>₹849</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg?v=1639755559" alt="">
+        <p>Blend The Rules Eyeshadow Palette</p>
+        <p><B>₹1199</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270" alt="">
+        <p>Matte Attack Transferproof Lipstick</p>
+        <p><B>₹699</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-bronzer-01-taupe-topper-cool-toned-brown-gray-undertone-11020228624467.jpg?v=1619102678" alt="">
+        <p>Contour De Force Mini Bronzer</p>
+        <p><B>₹399</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861" alt="">
+        <p>Mettle Priming Balm</p>
+        <p><B>₹1099</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12796432941139.jpg?v=1619114695" alt="">
+        <p>Goddess Of Flawless SPF30+ BB Cream</p>
+        <p><B>₹849</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1657257149" alt="">
+        <p>Base Of Glory Pore Minimizing Primer</p>
+        <p><B>₹799</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-bling-leader-illuminating-moisturizer-13644982681683.jpg?v=1619115847" alt="">
+        <p>Bling Leader Illuminating Moisturizer</p>
+        <p><B>₹499</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1640178644" alt="">
+        <p> Ace Of Face Foundation Stick</p>
+        <p><B>₹999</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/01_5e8187e3-f7a2-40aa-a759-d4bf69769234.jpg?v=1639496327" alt="">
+        <p> Kohl Of Honour Intense Kajal</p>
+        <p><B>₹799</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>  
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116" alt="">
+        <p>Air Kiss Powder Lipstick</p>
+        <p><B>₹599</B></p>
+        <button>ADD TO CART</button>
+     </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_df1e9403-ae9d-430c-8226-622d21c4743d.jpg?v=1640676422" alt="">
+        <p> Arch Arrival Brow Definer </p>
+        <p><B>₹499</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-10-latte-12775602356307.jpg?v=1619106501" alt="">
+        <p>Dream Cover SPF15 Mattifying Compact </p>
+        <p><B>₹1299</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813" alt="">
+        <p>Smudge Me Not Liquid Lipstick</p>
+        <p><B>₹1999</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-uptown-curl-lengthening-mascara-01-black-beauty-black-28122637828179.jpg?v=1619106532" alt="">
+        <p>Uptown Curl Lengthening Mascara</p>
+        <p><B>₹1299</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/2_d5e8f5f6-db6f-43d4-a1ac-1da7b22fdc1b.jpg?v=1652943021" alt="">
+        <p> The Most Eligiblur Correcting Primer</p>
+        <p><B>₹699</B></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div>
+        <img width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-face-fwd-blush-stick-01-coral-climax-bright-coral-13825375273043.jpg?v=1619116614" alt="">
+        <p> Face Fwd >> Blush Stick </p>
+        <p><B>₹1099</B></p>
+        <button>ADD TO CART</button>
+      </div>
+    </div>
+    <div class="stay">
+        <h3>LET'S STAY IN TOUCH</h3>
+        <div>
+        <p>Get the latest beauty tips straight to your inbox. Can’t wait to connect!</p>
+       </div> 
+       <div>
+           <input type="email" placeholder="enter your email" name="" id="">
+           <button>SUBSCRIBE</button>
+       </div>
+    </div>
+    <div class="bottom">
+           <div>
+               <img width="25%" src="C:\Users\aman1\Downloads\logo black.jpg" alt="">
+           </div>
+            
+               <h1 style="color:white ;text-align:center;padding-bottom:10px;padding-left:30px ;padding-top:0px ;">C A T</h1>
+           
+           <div>
+               <img width="28px"src="C:\Users\aman1\OneDrive\Pictures\fb black.png" alt="">
+               <img width="30px"src="C:\Users\aman1\OneDrive\Pictures\insta black.png" alt="">
+               <img width="30px"src="C:\Users\aman1\OneDrive\Pictures\twitter.png" alt="">
+               <img  width="50px" src="C:\Users\aman1\OneDrive\Pictures\youtube.png" alt="">
+               <img width="65px" src="C:\Users\aman1\Downloads\messenger.jpg" alt="">
+           </div>
+           <div>
+               <span>Stores</span>
+               <span>Terms & conditions </span>
+               <span>Returns</span>
+               <span>FAQs</span>
+               <span>About Us</span>
+           </div>
+           <h1 style="color: white;margin-left:30px">GET IN TOUCH</h1>
+           <div style="display: flex ;justify-content:space-evenly;">
+               <span style="color: white ;">
+                   <h4 >Call us at</h4>
+                   <p ><b>1800-209-9933</b></p>
+                   <p >Monday to Friday : 9 AM to 7 PM</p>
+               </span>
+               <span style="color: white ;">
+                   <h4>Sopport</h4>
+                   <p><b>hello@sugarcosmetics.com</b></p>
+               </span>
+               <span style="color: white ;">
+                   <h4>Careers</h4>
+                   <p><b>We're hiring!</b></p>
+               </span>
+               <span style="color: white ;">
+                   <h4>Press & Media</h4>
+                   <p><b>pr@sugarcosmetics.com</b></p>
+               </span>
+               <span style="color: white ;">
+                   <h4>Influencer Collab</h4>
+                   <p><b>Join Us</b></p>
+               </span>
+           </div>
+   
+    </div>
+
+</body>
+</html>
