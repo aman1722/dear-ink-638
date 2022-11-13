@@ -118,7 +118,7 @@
             display: grid;
             grid-template-columns: repeat(4,1fr);
             gap: 10px;
-            background-color: azure;
+            background-color: plum;
             border-radius: 10px;
             border-top: 1px solid black;
             border-bottom: 1px solid black;
@@ -270,7 +270,7 @@
     <div class="nav3">
        <a href="C:\Users\aman1\OneDrive\Desktop\dear-ink-638\index.html" style="color: grey;">Home</a>
        <p style="color: grey;">></p>
-       <a href="C:\Users\aman1\OneDrive\Desktop\dear-ink-638\cart.html"><b>Cart</b></a>
+       <a href="C:\Users\aman1\OneDrive\Desktop\dear-ink-638\cart.html"><b>Payment</b></a>
     </div>
 
     <div class="product">
@@ -278,7 +278,7 @@
             <img id="a" width="180px" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-matte-as-hell-crayon-lipstick-value-set-14600053391443.jpg?v=1619119204" alt="">
             <p id="b">Modern Matte Lipstick Value Set</p>
             <p id="c"><B>₹1149</B></p>
-            <button onclick="purchase()" class="add"> <a style="text-decoration:none ; color :white;" href="C:\Users\aman1\OneDrive\Desktop\dear-ink-638\payment.html">BUY</a> </button>
+            <button onclick="purchase()" class="add"> <a style="text-decoration:none ; color :white;" href="C:\Users\aman1\OneDrive\Desktop\dear-ink-638\index.html">PAY</a> </button>
         </div>
     </div>
   
@@ -343,17 +343,9 @@
 </body>
 </html>
 <script>
-    // let cart=(localStorage.getItem("cartItem"));
-    // let imgp=document.createElement("img");
-    // imgp.src=cart.pic.jpg;
-    // let title=document.createElement("p");
-    // title.innerText=cart.name;
-    // let rate=document.createElement("p");
-    // rate.innerHTML=cart.price;
-    // let btn=document.createElement("button");
-    // btn.innerText="buy";
-    // document.querySelector(".box").append(imgp,title,rate,btn);
-    // console.log(cart);
+   function purchase(){
+    alert("ORDER CONFIRMED");
+   }
 
      
     
